@@ -3,7 +3,7 @@ import { ActionFunctionArgs } from "@remix-run/node";
 import { Form } from "@remix-run/react";
 
 export async function action({ request }: ActionFunctionArgs) {
-	const { identityService } = await import("~/services/identity.server");
+	const { identityService } = await import("~/services/identity-access.server");
 	await identityService.authenticate("user-pass", request, {
 		successRedirect: "/",
 		failureRedirect: "/user/profile/login",

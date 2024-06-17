@@ -1,5 +1,5 @@
 import { redirect, type ActionFunctionArgs } from "@remix-run/node";
-import { identityService } from "~/services/identity.server";
+import { identityService } from "~/services/identity-access.server";
 import { commitSession, getSession } from "~/services/session.server";
 
 export const action = async ({ params, request }: ActionFunctionArgs) => {

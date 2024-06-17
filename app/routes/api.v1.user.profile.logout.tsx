@@ -1,5 +1,5 @@
 import type { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
-import { identityService } from "~/services/identity.server";
+import { identityService } from "~/services/identity-access.server";
 
 export async function loader({ params, request }: LoaderFunctionArgs) {
 	return await identityService.logout(request, {

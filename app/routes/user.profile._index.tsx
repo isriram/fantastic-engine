@@ -1,7 +1,7 @@
 import { Alert, Button, Card, Container, Group, PasswordInput, SimpleGrid, TextInput, Title } from "@mantine/core";
 import { LoaderFunctionArgs, json } from "@remix-run/node";
 import { Form, useLoaderData } from "@remix-run/react";
-import { identityService } from "~/services/identity.server";
+import { identityService } from "~/services/identity-access.server";
 import { commitSession, getSession } from "~/services/session.server";
 
 export const loader = async ({ params, request }: LoaderFunctionArgs) => {
