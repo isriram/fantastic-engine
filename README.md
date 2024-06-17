@@ -1,6 +1,15 @@
-# Welcome to Remix!
+# Welcome to the Fantastic Engine template!
 
-- 📖 [Remix docs](https://remix.run/docs)
+## Goodies included
+
+This template includes the following:
+
+- Remix-authentication with form strategy
+- Mantine UI components with an AppShell preconfigured
+- Knex and Postgres
+- Bcrypt
+- User profile, login and logout functions
+- A dummy route and navigation bar
 
 ## Development
 
