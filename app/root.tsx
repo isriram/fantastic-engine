@@ -13,7 +13,7 @@ import {
 import { Links, Meta, Outlet, Scripts, ScrollRestoration, useLoaderData } from "@remix-run/react";
 import { useDisclosure } from "@mantine/hooks";
 import { getSession } from "./services/session.server";
-import { identityService } from "./services/identity.server";
+import { identityService } from "./services/identity-access.server";
 import Navigation from "./components/Navigation/Navigation";
 import User from "./components/Navigation/UserProfile";
 import { LoaderFunctionArgs, redirect } from "@remix-run/node";

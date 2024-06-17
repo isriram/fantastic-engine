@@ -1,10 +1,11 @@
 import { NavLink } from "@mantine/core";
 import { useLocation } from "@remix-run/react";
-import { verifyAccessAndToggle } from "~/services/access.client";
+import { verifyAccessAndToggle } from "~/services/access-management";
 import React from "react";
 
 export default function Navigation({ userSession }: { userSession: IUserSession | null }) {
 	const location = useLocation();
+
 	return (
 		<React.Fragment>
 			{userSession !== undefined && userSession !== null ? (
